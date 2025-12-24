@@ -9,10 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        include:
-          - language: python
-            build-mode: none
-
+        language: python
+        
     permissions:
       # required for all workflows
       security-events: write
